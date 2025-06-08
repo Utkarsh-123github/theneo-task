@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Basic API
+  version: 1.0.0
+paths:
+  /api/get_users:
+    get:
+      responses:
+        '200':
+          description: OK
+    post:
+      responses:
+        default:
+          description: response
+  /users/{id}:
+    get:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: user
+  /users/{userId}:
+    get:
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: user data 
