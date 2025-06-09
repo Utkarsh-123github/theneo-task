@@ -175,10 +175,5 @@ examples/                # Sample OpenAPI specifications
 - **Medium (2pt deduction)**: Moderate impact on quality
 - **Low (1pt deduction)**: Minor improvements for best practices
 
-## 📄 License
 
-This project is licensed under the MIT License.
-
----
-
-**Made with ❤️ for better API design** 
+**Made with ❤️ for better API design by Utkarsh Tiwari** 
