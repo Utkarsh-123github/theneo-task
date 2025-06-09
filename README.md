@@ -65,11 +65,11 @@ npm run dev score examples/sample-good-api.yaml
 npm run dev score https://api.example.com/openapi.json
 
 # Score with detailed output
-npm run dev score examples/sample-good-api.yaml --verbose
+npm run dev -- score examples/sample-good-api.yaml --verbose
 
 # Export report to file
-npm run dev score examples/sample-good-api.yaml -f html -o report.html
-npm run dev score examples/sample-good-api.yaml -f markdown -o report.md
+npm run dev -- score examples/sample-good-api.yaml -f html -o report.html
+npm run dev -- score examples/sample-good-api.yaml -f markdown -o report.md
 ```
 
 #### Validate an OpenAPI Specification
@@ -137,10 +137,10 @@ npm run test:coverage
 
 ```bash
 # Test with a well-designed API (should score high)
-npm run dev score examples/sample-good-api.yaml --verbose
+npm run dev -- score examples/sample-good-api.yaml --verbose
 
 # Test with a poorly designed API (should score low)  
-npm run dev score examples/sample-bad-api.yaml --verbose
+npm run dev -- score examples/sample-bad-api.yaml --verbose
 ```
 
 ## 📁 Project Structure
