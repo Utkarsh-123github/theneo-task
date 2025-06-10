@@ -1,4 +1,4 @@
-# OpenAPI Scorer
+# SpecScorer - An OpenAPI Scoring tool
 
 A comprehensive OpenAPI specification scoring and validation tool that helps you improve your API design quality through automated analysis and actionable feedback.
 
