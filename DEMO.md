@@ -45,14 +45,7 @@ This project successfully implements a comprehensive OpenAPI specification scori
 
 ## 🚀 Bonus Features Implemented
 
-### 1. Web UI ✓
-- **Express Server**: Simple web interface for uploading specs
-- **Drag & Drop**: File upload with drag-and-drop support
-- **URL Input**: Score specs from remote URLs
-- **Interactive Reports**: Beautiful HTML reports with charts
-- **Download Reports**: Export results in multiple formats
-
-### 2. Advanced Features ✓
+### Advanced Features ✓
 - **TypeScript**: Full TypeScript implementation with strict typing
 - **Modular Architecture**: Clean separation of concerns
 - **CLI Tool**: Professional command-line interface with colored output
@@ -119,8 +112,6 @@ src/
 - **Jest**: Testing framework with 35 passing tests
 - **Commander.js**: CLI argument parsing
 - **Chalk**: Colored terminal output
-- **Express**: Web server for bonus UI
-- **Axios**: HTTP client for URL loading
 - **js-yaml**: YAML parsing support
 
 ## 🎯 Usage Examples
@@ -128,7 +119,7 @@ src/
 ### CLI Usage
 ```bash
 # Score a specification
-npm run dev score examples/sample-good-api.yaml --verbose
+npm run dev -- score examples/sample-good-api.yaml --verbose
 
 # Validate syntax
 npm run dev validate examples/sample-good-api.yaml
@@ -137,26 +128,9 @@ npm run dev validate examples/sample-good-api.yaml
 npm run dev info examples/sample-good-api.yaml
 
 # Export reports
-npm run dev score examples/sample-good-api.yaml --format html --output report.html
-```
-
-### Programmatic Usage
-```typescript
-import { OpenAPILoader, ScoringEngine, ReportGenerator } from 'openapi-scorer';
-
-const loader = new OpenAPILoader();
-const scorer = new ScoringEngine();
-const reporter = new ReportGenerator();
-
-const spec = await loader.load('path/to/spec.yaml');
-const report = scorer.score(spec);
-const htmlReport = reporter.generateReport(report, 'html');
-```
-
-### Web Interface
-```bash
-npm run web
-# Visit http://localhost:3000 for the web UI
+npm run dev -- score examples/sample-good-api.yaml -f html -o report.html
+npm run dev -- score examples/sample-good-api.yaml -f markdown -o report.md
+npm run dev -- score examples/sample-good-api.yaml -f json -o report.json
 ```
 
 ## 🧪 Quality Assurance
@@ -178,10 +152,9 @@ npm run web
 1. **Comprehensive Scoring**: Accurately identifies 20+ types of API design issues
 2. **Professional CLI**: Beautiful, colored output with progress indicators
 3. **Multiple Formats**: JSON, Markdown, and HTML report generation
-4. **Web Interface**: Bonus drag-and-drop web UI for non-technical users
-5. **Extensible Design**: Easy to add new scoring criteria or modify weights
-6. **Production Ready**: Full TypeScript, comprehensive tests, error handling
-7. **Real-world Testing**: Works with actual OpenAPI specifications
+4. **Extensible Design**: Easy to add new scoring criteria or modify weights
+5. **Production Ready**: Full TypeScript, comprehensive tests, error handling
+6. **Real-world Testing**: Works with actual OpenAPI specifications
 
 ## 🎉 Conclusion
 

@@ -31,7 +31,7 @@ The tool evaluates your OpenAPI specification across these criteria (total: 100 
 ### Prerequisites
 
 - Node.js 16+ 
-- npm or yarn
+- npm
 
 ### Install Dependencies
 
@@ -45,11 +45,6 @@ npm install
 npm run build
 ```
 
-### Global Installation (Optional)
-
-```bash
-npm install -g .
-```
 
 ## 📖 Usage
 
@@ -68,8 +63,9 @@ npm run dev score https://api.example.com/openapi.json
 npm run dev -- score examples/sample-good-api.yaml --verbose
 
 # Export report to file
-npm run dev -- score examples/sample-good-api.yaml -f html -o report.html
+npm run dev -- score examples/sample-good-api.yaml -f html -o report.html 
 npm run dev -- score examples/sample-good-api.yaml -f markdown -o report.md
+npm run dev -- score examples/sample-good-api.yaml -f json -o report.json
 ```
 
 #### Validate an OpenAPI Specification
