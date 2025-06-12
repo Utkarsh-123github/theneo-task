@@ -26,7 +26,7 @@ The tool evaluates your OpenAPI specification across these criteria (total: 100 
 | **Security** | 10% | Defined security schemes and proper authentication |
 | **Best Practices** | 10% | Versioning, servers array, tags, component reuse |
 
-## Demo 
+## 🎥 Demo 
 
 
 https://github.com/user-attachments/assets/eee6642d-5331-455d-b2f8-8296d3377234
