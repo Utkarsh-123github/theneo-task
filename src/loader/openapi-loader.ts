@@ -5,9 +5,7 @@ import axios from 'axios';
 import { OpenAPISpec, ValidationResult, PathItem } from '../types';
 
 export class OpenAPILoader {
-  /**
-   * Load OpenAPI spec from file path or URL
-   */
+  // Load OpenAPI spec from file path or URL
   async load(source: string): Promise<OpenAPISpec> {
     let content: string;
 
@@ -20,9 +18,7 @@ export class OpenAPILoader {
     return this.parseContent(content, source);
   }
 
-  /**
-   * Validate OpenAPI spec structure and syntax
-   */
+  // Validate OpenAPI spec structure and syntax
   validate(spec: OpenAPISpec): ValidationResult {
     const errors: string[] = [];
     const warnings: string[] = [];

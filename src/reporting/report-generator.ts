@@ -2,9 +2,7 @@ import { ScoringReport, ReportFormat, ExportOptions } from '../types';
 import { promises as fs } from 'fs';
 
 export class ReportGenerator {
-  /**
-   * Generate report in specified format
-   */
+  // Generate report in specified format 
   generateReport(report: ScoringReport, format: ReportFormat): string {
     switch (format) {
       case 'json':
@@ -18,9 +16,7 @@ export class ReportGenerator {
     }
   }
 
-  /**
-   * Export report to file
-   */
+  // Export report to file
   async exportReport(report: ScoringReport, options: ExportOptions): Promise<string> {
     const content = this.generateReport(report, options.format);
     
