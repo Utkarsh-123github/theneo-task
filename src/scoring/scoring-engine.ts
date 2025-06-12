@@ -35,9 +35,6 @@ export class ScoringEngine {
     };
   }
 
-  /**
-   * Score an OpenAPI specification
-   */
   score(spec: OpenAPISpec): ScoringReport {
     const results: ScoreResult[] = [];
 
